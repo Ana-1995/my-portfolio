@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style: none;
+}
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+:root {
+  --font-base: 'Cormorant Upright', serif;
+  --font-alt: 'Open Sans', sans-serif;
+  --title-color: #01411C;
+  --color-darkgreen: #006400;
+  --color-black: #0C0C0C;
+  --color-lightgreen: #32de84;
+  --color-btn: #fafffa;
+  --color-white: #FFF;
+  --color-btnBg: #008200;
+  --color-btnBgHover: #026402;
+  --hover-transition: all 0.4s ease;
+  --letter-spacing: 1.5px;
+  --text-gradient-from-2: #d39219;
+  --text-gradient-to-2: #FFD700;
+  --text-gradient-from-3: #fda2a2; 
+  --text-gradient-to-3: #ff0404;
+  --text-gradient-from-4: #137213;
+  --text-gradient-to-4: #09ff09;
+  --text-gradient-from: #ffffcc;
+  --text-gradient-to: #ffff00;
+  --title1-gradient-from: 		#e07c7c;
+  --title1-gradient-to: #FF0000;
+  
+}
+body{
+  background: #292929;
+}
+h1, h2{
+  font-family: var(--font-alt);
+}
+p{
+   font-family: var(--font-alt);
+}
+.name{
+  font-family: var(--font-base);
+}
+.sticky-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/*skills  dots */
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.slick-dots li {
+  margin: 0 5px; /* Adjust the spacing between dots */
+}
+.slick-dots li button {
+  width: 10px; /* Set the desired width */
+  height: 10px; /* Set the desired height */
+  background-color: white;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid white; /* Add a border to all dots */
+  transition: all 0.3s ease;
+}
+
+.slick-dots li.slick-active button {
+  background-color: red; /* Change the background color of the active dot */
+}
+/* Add this CSS to your stylesheet or component styles */
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: white;
+}
+.slick-dots li button:before {
+    font-family: 'slick';
+    /* font-size: 6px; */
+    line-height: 20px;
+    position: absolute;
+    top: 4;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '';
+    text-align: center;
+    opacity: .25;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/**************************************/ 
