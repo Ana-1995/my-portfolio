@@ -29,16 +29,8 @@ html{
   --color-btnBgHover: #026402;
   --hover-transition: all 0.4s ease;
   --letter-spacing: 1.5px;
-  --text-gradient-from-2: #d39219;
-  --text-gradient-to-2: #FFD700;
-  --text-gradient-from-3: #fda2a2; 
-  --text-gradient-to-3: #ff0404;
-  --text-gradient-from-4: #137213;
-  --text-gradient-to-4: #09ff09;
-  --text-gradient-from: #ffffcc;
-  --text-gradient-to: #ffff00;
-  --title1-gradient-from: 		#e07c7c;
-  --title1-gradient-to: #FF0000;
+  --title1-gradient-from:#FF704D;
+  --title1-gradient-to: #ff1414;
   
 }
 body{
