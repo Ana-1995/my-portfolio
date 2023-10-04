@@ -15,32 +15,32 @@ import github from '../../assets/github.png'
 import tailwind from '../../assets/tailwind.webp'
 
 const Skills = () => {
-  const [resetAnimation, setResetAnimation] = useState(false)
-  const animateRef = useRef(null)
-  useEffect(() => {
-    const options = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.2,
-    }
-    const animateObserver = new IntersectionObserver((entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setResetAnimation(true)
-          observer.unobserve(entry.target)
-        }
-      })
-    }, options)
-    if (animateRef.current) {
-      animateObserver.observe(animateRef.current)
-    }
+ const [resetAnimation, setResetAnimation] = useState(false)
+ const animateRef = useRef(null)
+ useEffect(() => {
+   const options = {
+     root: null,
+     rootMargin: '0px',
+     threshold: 0.2,
+   }
+   const animateObserver = new IntersectionObserver((entries, observer) => {
+     entries.forEach((entry) => {
+       if (entry.isIntersecting) {
+         setResetAnimation(true)
+         observer.unobserve(entry.target)
+       }
+     })
+   }, options)
+   if (animateRef.current) {
+     animateObserver.observe(animateRef.current)
+   }
 
-    return () => {
-      if (animateRef.current) {
-        animateObserver.unobserve(animateRef.current)
-      }
-    }
-  }, [])
+   return () => {
+     if (animateRef.current) {
+       animateObserver.unobserve(animateRef.current)
+     }
+   }
+ }, [])
   
   // Slider settings
   const settings = {
@@ -64,7 +64,7 @@ const Skills = () => {
         <div className='flex flex-col lg:flex-row justify-center items-center lg:items-start lg:justify-start mt-5 lg:mt-9 lg:mb-24 lg:ml-72'>
           <div className='w-full lg:w-[35rem]'>
             <Slider {...settings} className='w-full h-full rounded-md pb-3'>
-              <div>
+              <div> 
                 <img
                   className='w-full h-auto object-cover rounded-md'
                   src={certificate1}
@@ -88,6 +88,7 @@ const Skills = () => {
               className={`pt-4 leading-7 lg:w-[85%] md:text-xl lg:text-base lg:leading-7 text-justify ${
                 resetAnimation ? 'tracking-in-expand-fwd' : ''
               }`}
+              ref={animateRef}
             >
               Last year, I completed an intensive Frontend Development course at
               the Digital Industry Academy, resulting in two certificates: one
@@ -116,6 +117,7 @@ const Skills = () => {
               dedication to staying current in web development and continually
               honing my skills.
             </p>
+            
           </div>
         </div>
 
