@@ -53,5 +53,6 @@ To run this project locally, follow these steps:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/my-portfolio.git
+   git clone https://github.com/ana-1995/my-portfolio.git
 
+# my-portfolio
