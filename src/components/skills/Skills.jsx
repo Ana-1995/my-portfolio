@@ -61,7 +61,7 @@ const Skills = () => {
         <Title title={'Certifications & Technical Skills'} />
       </div>
       <div>
-        <div className='flex flex-col lg:flex-row justify-center items-center lg:items-start lg:justify-start mt-5 lg:mt-9 lg:mb-24 lg:ml-72'>
+        <div className='flex flex-col lg:flex-row justify-center items-center lg:items-start lg:justify-start mt-5 lg:mt-10 lg:mb-24 lg:ml-72'>
           <div className='w-full lg:w-[35rem]'>
             <Slider {...settings} className='w-full h-full rounded-md pb-3'>
               <div> 

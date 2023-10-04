@@ -34,7 +34,7 @@ const Projects = () => {
     <section className='ml-0 lg:ml-52 mb-12 lg:mb-16' id='projects'>
       <Title title={'my projects'} />
       <div
-        className={`flex flex-col lg:flex-row flex-wrap justify-center gap-x-6 lg:gap-x-24 gap-y-10 mt-2 lg:mt-6`}
+        className={`flex flex-col lg:flex-row flex-wrap justify-center gap-x-6 lg:gap-x-24 gap-y-10 mt-4 lg:mt-8`}
       >
         <article className='flex flex-col w-full lg:w-[35%] rounded-lg pb-3 bg-[#434343] shadow-lg shadow-gray-600'>
           <img

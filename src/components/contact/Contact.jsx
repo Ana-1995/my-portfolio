@@ -82,7 +82,7 @@ const Contact = () => {
       className='mt-2 lg:mt-20 mb-10 lg:mb-20 ml-0 lg:ml-72 px-4 lg:px-0'
     >
       <Title title={'contact'} />
-      <div className='flex flex-col lg:flex-row gap-5 lg:gap-24 mt-4 lg:mt-6'>
+      <div className='flex flex-col lg:flex-row gap-5 lg:gap-24 mt-6 lg:mt-10'>
         <div
           className={`flex flex-col gap-6 flex-1 lg:flex-[0.3] lg:ml-32 ${
             resetAnimation ? 'bounce-top' : ''

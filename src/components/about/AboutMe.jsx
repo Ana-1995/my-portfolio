@@ -92,7 +92,7 @@ const AboutMe = () => {
         className='text-white ml-0 lg:ml-72 mb-10 lg:mb-20 px-4 lg:px-0 h-full'
       >
         <Title title={'about me'} />
-        <div className='flex flex-col lg:flex-row gap-2 mt-2 lg:mt-0'>
+        <div className='flex flex-col lg:flex-row gap-2 mt-2 lg:mt-4'>
           <div
             className={`w-full lg:w-[40%] ${
               resetAnimation ? 'tilt-in-bottom-1' : 'hidden'
