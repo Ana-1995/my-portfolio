@@ -14,6 +14,7 @@ import git from '../../assets/git.png'
 import github from '../../assets/github.png'
 import tailwind from '../../assets/tailwind.webp'
 
+
 const Skills = () => {
  const [resetAnimation, setResetAnimation] = useState(false)
  const animateRef = useRef(null)
