@@ -24,7 +24,7 @@ const MobileNav = () => {
         smooth={true}
         duration={500}
         onClick={() => handleNavClick('#home')}
-        className={`bg-transparent p-3 rounded-full flex text-white text-xl ${
+        className={`bg-transparent p-3 rounded-full flex text-white text-xl hover:scale-125 ease-in duration-200 ${
           activeNav === '#home' ? 'text-red-600' : ''
         }`}
       >
@@ -36,7 +36,7 @@ const MobileNav = () => {
         smooth={true}
         duration={500}
         onClick={() => handleNavClick('#about')}
-        className={`bg-transparent p-3 rounded-full flex text-white text-xl ${
+        className={`bg-transparent p-3 rounded-full flex text-white text-xl hover:scale-125 ease-in duration-200 ${
           activeNav === '#about' ? 'text-red-600' : ''
         }`}
       >
@@ -47,7 +47,7 @@ const MobileNav = () => {
         smooth={true}
         duration={500}
         onClick={() => handleNavClick('#skills')}
-        className={`bg-transparent p-3 rounded-full flex text-white text-xl ${
+        className={`bg-transparent p-3 rounded-full flex text-white text-xl hover:scale-125 ease-in duration-200 ${
           activeNav === '#skills' ? 'text-red-600' : ''
         }`}
       >
@@ -58,7 +58,7 @@ const MobileNav = () => {
         smooth={true}
         duration={500}
         onClick={() => handleNavClick('#projects')}
-        className={`bg-transparent p-3 rounded-full flex text-white text-xl ${
+        className={`bg-transparent p-3 rounded-full flex text-white text-xl hover:scale-125 ease-in duration-200 ${
           activeNav === '#projects' ? 'text-red-600' : ''
         }`}
       >
@@ -69,7 +69,7 @@ const MobileNav = () => {
         smooth={true}
         duration={500}
         onClick={() => handleNavClick('#contact')}
-        className={`bg-transparent p-3 rounded-full flex text-white text-xl ${
+        className={`bg-transparent p-3 rounded-full flex text-white text-xl hover:scale-125 ease-in duration-200 ${
           activeNav === '#contact' ? 'text-red-600' : ''
         }`}
       >
