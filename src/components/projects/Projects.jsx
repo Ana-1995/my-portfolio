@@ -27,7 +27,7 @@ const projectsData = [
   {
     id: 'project3',
     name: 'Youtube Clone',
-    img: bank,
+    img: youtube,
     about:
       "The YouTube Clone project is a web application inspired by the world's most popular video-sharing platform. This project was created as part of my journey to enhance my web development skills and gain hands-on experience in building complex web applications.",
     github: 'https://github.com/Ana-1995/youtube',
