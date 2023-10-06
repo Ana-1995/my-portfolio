@@ -104,7 +104,7 @@ const Navbar = () => {
               className={isItemActive('home') ? 'text-red-500' : ''}
             />
             <Link
-              to='#'
+              to='home'
               smooth={true}
               duration={500}
               onClick={() => scrollToSection('home')}

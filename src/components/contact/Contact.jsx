@@ -121,21 +121,21 @@ const Contact = () => {
             className='border border-indigo-100 w-full p-5 rounded-md bg-transparent resize-none text-white'
             type='text'
             name='name'
-            placeholder='Your Full Name'
+            placeholder='Your Name'
             required
           />
           <input
             className='border border-indigo-100 w-full  p-5 rounded-md bg-transparent resize-none text-white'
             type='email'
             name='email'
-            placeholder='Email'
+            placeholder='Your Email'
             required
           />
           <textarea
             className='border border-indigo-100 w-full  p-5 rounded-md bg-transparent resize-none text-white'
             name='message'
             rows='7'
-            placeholder='Message'
+            placeholder='Text Me'
             required
           ></textarea>
           <button
