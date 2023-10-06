@@ -11,7 +11,7 @@ const projectsData = [
     name: 'E-commerce App',
     img: plantshop,
     about:
-      'Green Space is an e-commerce website developed using React.js. It serves as the front-end for an online plant shop, enabling users to browse, search, and purchase various plants. This project showcase my front-end development skills and is an integral part of myportfolio.',
+      'Green Space is an e-commerce website developed using React.js. It serves as the front-end for an online plant shop, enabling users to browse, search, and purchase various plants. This project showcase my front-end development skills and is an integral part of my portfolio.',
     github: 'https://github.com/Ana-1995/PlantShop-App',
     live: 'https://plant-shop-app.vercel.app/',
   },
@@ -21,7 +21,7 @@ const projectsData = [
     name: 'Online Bank App',
     img: bank,
     about:
-      'I introduce my first JavaScript project, an Online Bank Application. I embarked on the journey of web development bycrafting an online banking experience from scratch. I put my coding skills to the test. This project marked the beginning of my journey into the world of web development.',
+      'I introduce my first JavaScript project, an Online Bank Application. I embarked on the journey of web development by crafting an online banking experience from scratch. I put my coding skills to the test. This project marked the beginning of my journey into the world of web development.',
     github: 'https://github.com/Ana-1995/online-bank',
   },
   {
