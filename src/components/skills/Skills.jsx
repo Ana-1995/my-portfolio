@@ -62,10 +62,15 @@ const Skills = () => {
         <Title title={'Certifications & Technical Skills'} />
       </div>
       <div>
-        <div className='flex flex-col lg:flex-row justify-center items-center lg:items-start lg:justify-start mt-5 lg:mt-10 lg:mb-24 lg:ml-72'>
+        <div
+          className={`${
+            resetAnimation ? 'fade-in-fwd' : ''
+          } flex flex-col lg:flex-row justify-center items-center lg:items-start lg:justify-start mt-5 lg:mt-10 lg:mb-24 lg:ml-72`}
+          ref={animateRef}
+        >
           <div className='w-full lg:w-[35rem]'>
             <Slider {...settings} className='w-full h-full rounded-md pb-3'>
-              <div> 
+              <div>
                 <img
                   className='w-full h-auto object-cover rounded-md'
                   src={certificate1}
@@ -85,12 +90,7 @@ const Skills = () => {
             <h2 className='text-xl md:text-2xl text-yellow-200 font-mono tracking-wider text-center font-semibold lg:text-start'>
               Continuous Learning and Ongoing Growth
             </h2>
-            <p
-              className={`pt-4 leading-7 lg:w-[85%] md:text-xl lg:text-base lg:leading-7 text-justify ${
-                resetAnimation ? 'tracking-in-expand-fwd' : ''
-              }`}
-              ref={animateRef}
-            >
+            <p className='pt-4 leading-7 lg:w-[85%] md:text-xl lg:text-base lg:leading-7 text-justify'>
               Last year, I completed an intensive Frontend Development course at
               the Digital Industry Academy, resulting in two certificates: one
               in Frontend Technologies{' '}
@@ -118,7 +118,6 @@ const Skills = () => {
               dedication to staying current in web development and continually
               honing my skills.
             </p>
-            
           </div>
         </div>
 
@@ -128,7 +127,11 @@ const Skills = () => {
           <img src={css} className='w-16 h-16 object-contain' alt='CSS' />
           <img src={js} className='w-16 h-16 object-contain' alt='JavaScript' />
           <img src={react} className='w-16 h-16 object-contain' alt='React' />
-          <img src={tailwind} className='w-20 h-16 object-contain' alt='tailwind' />
+          <img
+            src={tailwind}
+            className='w-20 h-16 object-contain'
+            alt='tailwind'
+          />
           <img src={git} className='w-16 h-16 object-contain' alt='Git' />
           <img src={github} className='w-16 h-16 object-contain' alt='GitHub' />
         </div>

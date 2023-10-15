@@ -3,34 +3,35 @@ import Title from '../Title'
 import plantshop from '../../assets/plantshop.jpg'
 import youtube from '../../assets/youtube.clone.jpg'
 import bank from '../../assets/bank.jpg'
+import coffee from '../../assets/coffeeshop.jpg'
 import './projects.css'
 
 const projectsData = [
   {
     id: 'project1',
-    name: 'E-commerce App',
+    name: 'Plant Shop Website',
     img: plantshop,
     about:
-      'Green Space is an e-commerce website developed using React.js. It serves as the front-end for an online plant shop, enabling users to browse, search, and purchase various plants. This project showcase my front-end development skills and is an integral part of my portfolio.',
+      "'Green Space' is an e-commerce website developed using React.js. It serves as the front-end for an online plant shop, enabling users to browse, search, and purchase various plants. This project showcase my front-end development skills and is an integral part of my portfolio.",
     github: 'https://github.com/Ana-1995/PlantShop-App',
     live: 'https://plant-shop-app.vercel.app/',
   },
-
   {
     id: 'project2',
+    name: 'Coffee Shop Website',
+    img: coffee,
+    about:
+      "My Coffee Shop project showcases a fully responsive e-commerce website. This project brings together essential front-end functionalities, including a shopping cart, search, filters, sorting, and an intuitive user interface. It's providing a seamless virtual coffee shopping experience.",
+    github: 'https://github.com/Ana-1995/online-bank',
+    live: 'https://coffeeshop-delta.vercel.app/',
+  },
+  {
+    id: 'project3',
     name: 'Online Bank App',
     img: bank,
     about:
       'I introduce my first JavaScript project, an Online Bank Application. I embarked on the journey of web development by crafting an online banking experience from scratch. I put my coding skills to the test. This project marked the beginning of my journey into the world of web development.',
     github: 'https://github.com/Ana-1995/online-bank',
-  },
-  {
-    id: 'project3',
-    name: 'Youtube Clone',
-    img: youtube,
-    about:
-      "The YouTube Clone project is a web application inspired by the world's most popular video-sharing platform. This project was created as part of my journey to enhance my web development skills and gain hands-on experience in building complex web applications.",
-    github: 'https://github.com/Ana-1995/youtube',
   },
 ]
 
