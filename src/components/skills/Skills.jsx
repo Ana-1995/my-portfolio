@@ -22,7 +22,7 @@ const Skills = () => {
     const options = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.02,
+      threshold: 0.03,
     }
 
     const animateObserver = new IntersectionObserver((entries, observer) => {
@@ -88,7 +88,7 @@ const Skills = () => {
               </div>
             </Slider>
           </div>
-          <div className={`${resetAnimation ? 'text-focus-in' : 'hidden'} lg:ml-10 mt-12 lg:mt-0`}>
+          <div className={`${resetAnimation ? 'text-focus-in' : ''} lg:ml-10 mt-12 lg:mt-0`}>
             <h2 className='text-xl md:text-2xl text-yellow-200 font-mono tracking-wider text-center font-semibold lg:text-start'>
               Continuous Learning and Ongoing Growth
             </h2>
@@ -132,7 +132,7 @@ const Skills = () => {
           <img
             src={tailwind}
             className='w-20 h-16 object-contain'
-            alt='tailwind'
+            alt='Tailwind'
           />
           <img src={git} className='w-16 h-16 object-contain' alt='Git' />
           <img src={github} className='w-16 h-16 object-contain' alt='GitHub' />

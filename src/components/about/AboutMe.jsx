@@ -98,7 +98,7 @@ const AboutMe = () => {
           >
             <img
               src={about}
-              className={`${resetAnimation ? 'scale-in-hor-left' : 'hidden'} object-cover w-full h-auto`}
+              className={`${resetAnimation ? 'scale-in-hor-left' : ''} object-cover w-full h-auto`}
               alt='react journey'
               ref={imageRef}
             />
@@ -127,7 +127,7 @@ const AboutMe = () => {
               smooth={true}
               duration={500}
               className={`bg-green-700 ml-4 lg:ml-7 text-white py-2 px-4 rounded-full mt-5 hover:bg-green-900 duration-500 text-xl  tracking-wider cursor-pointer ${
-                resetAnimation ? 'shake-top' : 'hidden'
+                resetAnimation ? 'shake-top' : ''
               }`}
             >
               Hire Me
@@ -137,7 +137,7 @@ const AboutMe = () => {
       </section>
       <article
         className={`bg-stone-700 rounded-md shadow-md shadow-zinc-500 flex flex-col justify-center items-start w-full lg:w-[70%] ml-0 lg:ml-[21rem] px-4 lg:px-7 py-5 ${
-          resetAnimation ? 'color-change-2x' : 'hidden'
+          resetAnimation ? 'color-change-2x' : ''
         }`}
       >
         {aboutData.map((item) => (

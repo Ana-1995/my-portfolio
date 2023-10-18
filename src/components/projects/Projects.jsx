@@ -41,7 +41,7 @@ const Projects = () => {
       const options = {
         root: null,
         rootMargin: '0px',
-        threshold: 0.2,
+        threshold: 0.002,
       }
       const animateObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach((entry) => {

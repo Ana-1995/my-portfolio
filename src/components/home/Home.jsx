@@ -51,7 +51,7 @@ const Home = () => {
             smooth={true}
             duration={500}
             className={`bg-red-600 px-4 py-2 border cursor-pointer text-white tracking-wider text-xl lg:text-lg rounded-full mt-4 lg:mt-0 hover:bg-red-800 duration-500 ${
-              resetAnimation ? 'shake-top' : 'hidden'
+              resetAnimation ? 'shake-top' : ''
             }`}
           >
             Contact
