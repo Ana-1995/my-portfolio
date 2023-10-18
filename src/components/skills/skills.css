@@ -1,68 +1,59 @@
 
-.tracking-in-expand-fwd {
-	-webkit-animation: tracking-in-expand-fwd 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	        animation: tracking-in-expand-fwd 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+.scale-in-hor-center {
+	-webkit-animation: scale-in-hor-center 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-hor-center 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
-
-@-webkit-keyframes tracking-in-expand-fwd {
+@-webkit-keyframes scale-in-hor-center {
   0% {
-    letter-spacing: -0.5em;
-    -webkit-transform: translateZ(-700px);
-            transform: translateZ(-700px);
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    opacity: 1;
   }
   100% {
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
     opacity: 1;
   }
 }
-@keyframes tracking-in-expand-fwd {
+@keyframes scale-in-hor-center {
   0% {
-    letter-spacing: -0.5em;
-    -webkit-transform: translateZ(-700px);
-            transform: translateZ(-700px);
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    opacity: 1;
   }
   100% {
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
     opacity: 1;
   }
 }
 
-.fade-in-fwd {
-	-webkit-animation: fade-in-fwd 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: fade-in-fwd 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+.text-focus-in {
+	-webkit-animation: text-focus-in 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
-@-webkit-keyframes fade-in-fwd {
+@-webkit-keyframes text-focus-in {
   0% {
-    -webkit-transform: translateZ(-80px);
-            transform: translateZ(-80px);
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
     opacity: 1;
   }
 }
-@keyframes fade-in-fwd {
+@keyframes text-focus-in {
   0% {
-    -webkit-transform: translateZ(-80px);
-            transform: translateZ(-80px);
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
     opacity: 1;
   }
 }

@@ -69,7 +69,7 @@ p{
   background-color: white;
   border-radius: 50%;
   background-color: transparent;
-  border: 2px solid white; /* Add a border to all dots */
+  border: 2px solid red; /* Add a border to all dots */
   transition: all 0.3s ease;
 }
 

@@ -51,7 +51,7 @@ const Home = () => {
             smooth={true}
             duration={500}
             className={`bg-red-600 px-4 py-2 border cursor-pointer text-white tracking-wider text-xl lg:text-lg rounded-full mt-4 lg:mt-0 hover:bg-red-800 duration-500 ${
-              resetAnimation ? 'shake-top' : ''
+              resetAnimation ? 'shake-top' : 'hidden'
             }`}
           >
             Contact
@@ -70,22 +70,22 @@ const Home = () => {
 
           <div
             className={`${
-              resetAnimation ? 'slide-left' : ''
+              resetAnimation ? 'slide-left' : 'hidden'
             } absolute hidden xl:flex bg-red-700 h-2 w-20 -top-8 left-10`}
           />
           <div
             className={`${
-              resetAnimation ? 'slide-top' : ''
+              resetAnimation ? 'slide-top' : 'hidden'
             } absolute hidden xl:flex w-2 h-20 top-12 -left-10 bg-red-700`}
           />
           <div
             className={`${
-              resetAnimation ? 'slide-bottom' : ''
+              resetAnimation ? 'slide-bottom' : 'hidden'
             } absolute hidden xl:flex bg-red-700 h-20 w-2 bottom-[70px] -right-10`}
           />
           <div
             className={`${
-              resetAnimation ? 'slide-right' : ''
+              resetAnimation ? 'slide-right' : 'hidden'
             } absolute hidden xl:flex w-20 h-2 -bottom-8 right-10 bg-red-700`}
           />
         </div>

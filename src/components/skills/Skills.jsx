@@ -14,35 +14,37 @@ import git from '../../assets/git.png'
 import github from '../../assets/github.png'
 import tailwind from '../../assets/tailwind.webp'
 
-
 const Skills = () => {
- const [resetAnimation, setResetAnimation] = useState(false)
- const animateRef = useRef(null)
- useEffect(() => {
-   const options = {
-     root: null,
-     rootMargin: '0px',
-     threshold: 0.2,
-   }
-   const animateObserver = new IntersectionObserver((entries, observer) => {
-     entries.forEach((entry) => {
-       if (entry.isIntersecting) {
-         setResetAnimation(true)
-         observer.unobserve(entry.target)
-       }
-     })
-   }, options)
-   if (animateRef.current) {
-     animateObserver.observe(animateRef.current)
-   }
+  const [resetAnimation, setResetAnimation] = useState(false)
+  const animateRef = useRef(null)
 
-   return () => {
-     if (animateRef.current) {
-       animateObserver.unobserve(animateRef.current)
-     }
-   }
- }, [])
-  
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.02,
+    }
+
+    const animateObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setResetAnimation(true)
+          observer.unobserve(entry.target)
+        }
+      })
+    }, options)
+
+    if (animateRef.current) {
+      animateObserver.observe(animateRef.current)
+    }
+
+    return () => {
+      if (animateRef.current) {
+        animateObserver.unobserve(animateRef.current)
+      }
+    }
+  }, [])
+
   // Slider settings
   const settings = {
     dots: true,
@@ -59,16 +61,16 @@ const Skills = () => {
       className='text-white mt-12 lg:mt-24 px-4 lg:px-0 h-full mb-8'
     >
       <div className='ml-0 lg:ml-60'>
-        <Title title={'Certifications & Technical Skills'} />
+        <Title title='Certifications & Technical Skills' />
       </div>
       <div>
-        <div
-          className={`${
-            resetAnimation ? 'fade-in-fwd' : ''
-          } flex flex-col lg:flex-row justify-center items-center lg:items-start lg:justify-start mt-5 lg:mt-10 lg:mb-24 lg:ml-72`}
-          ref={animateRef}
-        >
-          <div className='w-full lg:w-[35rem]'>
+        <div className='flex flex-col lg:flex-row justify-center items-center lg:items-start lg:justify-start mt-5 lg:mt-10 lg:mb-24 lg:ml-72'>
+          <div
+            className={`w-full lg:w-[35rem] ${
+              resetAnimation ? 'scale-in-hor-center' : ''
+            }`}
+            ref={animateRef}
+          >
             <Slider {...settings} className='w-full h-full rounded-md pb-3'>
               <div>
                 <img
@@ -86,7 +88,7 @@ const Skills = () => {
               </div>
             </Slider>
           </div>
-          <div className='lg:ml-10 mt-12 lg:mt-0'>
+          <div className={`${resetAnimation ? 'text-focus-in' : 'hidden'} lg:ml-10 mt-12 lg:mt-0`}>
             <h2 className='text-xl md:text-2xl text-yellow-200 font-mono tracking-wider text-center font-semibold lg:text-start'>
               Continuous Learning and Ongoing Growth
             </h2>

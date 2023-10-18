@@ -1,33 +1,3 @@
-.tilt-in-bottom-1 {
-	-webkit-animation: tilt-in-bottom-1 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: tilt-in-bottom-1 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-@-webkit-keyframes tilt-in-bottom-1 {
-  0% {
-    -webkit-transform: rotateY(30deg) translateY(300px) skewY(-30deg);
-            transform: rotateY(30deg) translateY(300px) skewY(-30deg);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
-            transform: rotateY(0deg) translateY(0) skewY(0deg);
-    opacity: 1;
-  }
-}
-@keyframes tilt-in-bottom-1 {
-  0% {
-    -webkit-transform: rotateY(30deg) translateY(300px) skewY(-30deg);
-            transform: rotateY(30deg) translateY(300px) skewY(-30deg);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
-            transform: rotateY(0deg) translateY(0) skewY(0deg);
-    opacity: 1;
-  }
-}
-
 .text-focus-in {
 	-webkit-animation: text-focus-in 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 	        animation: text-focus-in 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
@@ -137,7 +107,7 @@
 
 @-webkit-keyframes color-change-2x {
   0% {
-    background: #4A5568;
+      background: #475163;
   }
   100% {
     background: #282e38;
@@ -145,9 +115,49 @@
 }
 @keyframes color-change-2x {
   0% {
-    background: #4A5568;
+    background: #475163;
   }
   100% {
     background: #282e38;
   }
 }
+
+.scale-in-hor-left {
+	-webkit-animation: scale-in-hor-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-hor-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes scale-in-hor-left {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    opacity: 1;
+  }
+}
+@keyframes scale-in-hor-left {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    opacity: 1;
+  }
+}
+
+

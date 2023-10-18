@@ -73,22 +73,22 @@ const Navbar = () => {
         </Link>
         <div
           className={`${
-            resetAnimation ? 'slide-right' : ''
+            resetAnimation ? 'slide-right' : 'hidden'
           } absolute bg-red-700 h-1 w-6 -top-3 right-20`}
         />
         <div
           className={`${
-            resetAnimation ? 'slide-top' : ''
+            resetAnimation ? 'slide-top' : 'hidden'
           } absolute bg-red-700 h-5 w-1 top-[4.5rem] right-0`}
         />
         <div
           className={`${
-            resetAnimation ? 'slide-bottom' : ''
+            resetAnimation ? 'slide-bottom' : 'hidden'
           } absolute bg-red-700 h-5 w-1 bottom-20 -left-3`}
         />
         <div
           className={`${
-            resetAnimation ? 'slide-left' : ''
+            resetAnimation ? 'slide-left' : 'hidden'
           } absolute bg-red-700 h-1 w-6 -bottom-6 -right-3`}
         />
       </div>

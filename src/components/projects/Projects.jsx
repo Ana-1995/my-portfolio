@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Title from '../Title'
 import plantshop from '../../assets/plantshop.jpg'
-import youtube from '../../assets/youtube.clone.jpg'
 import bank from '../../assets/bank.jpg'
 import coffee from '../../assets/coffeeshop.jpg'
 import './projects.css'

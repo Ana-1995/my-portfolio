@@ -46,7 +46,7 @@ const AboutMe = () => {
     const options = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.2,
+      threshold: 0.01,
     }
 
     const imageObserver = new IntersectionObserver((entries, observer) => {
@@ -94,13 +94,11 @@ const AboutMe = () => {
         <Title title={'about me'} />
         <div className='flex flex-col lg:flex-row gap-2 mt-2 lg:mt-4'>
           <div
-            className={`w-full lg:w-[40%] ${
-              resetAnimation ? 'tilt-in-bottom-1' : 'hidden'
-            }`}
+            className={`w-full lg:w-[40%]`}
           >
             <img
               src={about}
-              className='object-cover w-full h-auto'
+              className={`${resetAnimation ? 'scale-in-hor-left' : 'hidden'} object-cover w-full h-auto`}
               alt='react journey'
               ref={imageRef}
             />
@@ -139,7 +137,7 @@ const AboutMe = () => {
       </section>
       <article
         className={`bg-stone-700 rounded-md shadow-md shadow-zinc-500 flex flex-col justify-center items-start w-full lg:w-[70%] ml-0 lg:ml-[21rem] px-4 lg:px-7 py-5 ${
-          resetAnimation ? 'color-change-2x' : ''
+          resetAnimation ? 'color-change-2x' : 'hidden'
         }`}
       >
         {aboutData.map((item) => (
