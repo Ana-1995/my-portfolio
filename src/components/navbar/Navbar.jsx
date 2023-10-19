@@ -11,13 +11,12 @@ import { useEffect } from 'react'
 import { Link } from 'react-scroll'
 
 const Navbar = () => {
-  const [resetAnimation, setResetAnimation] = useState(false)
-
+  const [linesAnimate, setlinesAnimate] = useState(false)
   const [activeSection, setActiveSection] = useState('home')
   const observer = useRef(null)
 
     useEffect(() => {
-    setTimeout(() => setResetAnimation(true), 100) 
+      setTimeout(()=>setlinesAnimate(true), 900)
      // Create an Intersection Observer
      observer.current = new IntersectionObserver(
     (entries) => {
@@ -73,22 +72,22 @@ const Navbar = () => {
         </Link>
         <div
           className={`${
-            resetAnimation ? 'slide-right' : 'hidden'
+            linesAnimate ? 'slide-right' : 'hidden'
           } absolute bg-red-700 h-1 w-6 -top-3 right-20`}
         />
         <div
           className={`${
-            resetAnimation ? 'slide-top' : 'hidden'
+            linesAnimate ? 'slide-top' : 'hidden'
           } absolute bg-red-700 h-5 w-1 top-[4.5rem] right-0`}
         />
         <div
           className={`${
-            resetAnimation ? 'slide-bottom' : 'hidden'
+            linesAnimate ? 'slide-bottom' : 'hidden'
           } absolute bg-red-700 h-5 w-1 bottom-20 -left-3`}
         />
         <div
           className={`${
-            resetAnimation ? 'slide-left' : 'hidden'
+            linesAnimate ? 'slide-left' : 'hidden'
           } absolute bg-red-700 h-1 w-6 -bottom-6 -right-3`}
         />
       </div>
