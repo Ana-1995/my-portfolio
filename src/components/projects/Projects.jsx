@@ -3,6 +3,7 @@ import Title from '../Title'
 import plantshop from '../../assets/plantshop.jpg'
 import bank from '../../assets/bank.jpg'
 import coffee from '../../assets/coffeeshop.jpg'
+import quiz from '../../assets/quiz.jpg'
 import './projects.css'
 
 const projectsData = [
@@ -26,6 +27,15 @@ const projectsData = [
   },
   {
     id: 'project3',
+    name: 'Quiz App',
+    img: quiz,
+    about:
+      'Explore my interactive Quiz App, a web project that brings knowledge and fun together! Built with React.js and styled using Tailwind CSS, this app seamlessly integrates with the Trivia API. Choose your quiz category and difficulty level, select the number of questions, and answer the questions to receive instant feedback.',
+    github: 'https://github.com/Ana-1995/quiz-app',
+    live: 'https://quiz-app-three-peach.vercel.app/',
+  },
+  {
+    id: 'project4',
     name: 'Online Bank App',
     img: bank,
     about:
@@ -65,12 +75,12 @@ const Projects = () => {
     <section className='ml-0 lg:ml-52 mb-12 lg:mb-16' id='projects'>
       <Title title={'my projects'} />
       <div
-        className={`flex flex-col lg:flex-row flex-wrap justify-center gap-x-6 lg:gap-x-6 xl:ml-2 gap-y-10 mt-4 lg:mt-8`}
+        className={`flex flex-col lg:flex-row flex-wrap justify-center gap-x-6 lg:gap-x-20 gap-y-16 mt-4 lg:mt-8`}
       >
         {projectsData.map((project) => (
           <article
             key={project.id}
-            className='flex flex-col w-full lg:w-[30%] rounded-lg pb-3 bg-[#434343] shadow-lg shadow-gray-600'
+            className='flex flex-col w-full lg:w-[33%] rounded-lg pb-3 bg-[#434343] shadow-lg shadow-gray-600'
           >
             <img
               src={project.img}
